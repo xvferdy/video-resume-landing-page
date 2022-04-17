@@ -7,22 +7,23 @@ function Header() {
     <header id="header" className="header">
       <div className="container header__container">
         {/* LEFT */}
-        <div className="header__cta">
+        <div className="header__content">
           <h3>Stand out of the crowd</h3>
           <h1>Create the Next Gen Video Resume</h1>
-          {/* <Image src="/assets/path.png" width={274} height={14} alt="Line" /> */}
           <p>
             Get hired quickly by giving your resume the video look it deserves.
           </p>
-          <Link href="#get-started" passHref>
-            <a className="btn btn--primary">Get Started</a>
-          </Link>
-          <Link href="#get-started" passHref>
-            <a className="btn">
-              {/* <Image src="/assets/play-circle.png" width={24} height={24} />{" "} */}
-              Watch Demo
-            </a>
-          </Link>
+          <div className="header__content-cta">
+            <Link href="#get-started" passHref>
+              <a className="btn btn--primary">Get Started</a>
+            </Link>
+            <Link href="#get-started" passHref>
+              <a className="btn">
+                <Image src="/assets/play-circle.png" width={24} height={24} />{" "}
+                Watch Demo
+              </a>
+            </Link>
+          </div>
         </div>
         {/* RIGHT */}
         <div className="header__video">

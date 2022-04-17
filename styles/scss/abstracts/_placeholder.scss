@@ -18,6 +18,9 @@
   // border: 1px solid #000;
   max-width: $width-lg;
   margin: 0 auto;
+  & > h2 {
+    margin-bottom: 2.6rem;
+  }
   & > h3 {
     margin-bottom: 2rem;
   }

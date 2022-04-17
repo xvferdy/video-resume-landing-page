@@ -7,22 +7,28 @@
   .container {
     @extend %container;
     display: grid;
-    // place-items: center;
+    place-items: center;
+    gap: 2rem;
     grid-template-columns: 40% 60%;
   }
-  &__cta {
+  &__content {
     // border: 1px solid #000;
-    // h3 {
-    //   margin-bottom: 2rem;
-    // }
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+
+    &-cta {
+      a {
+        .btn--icon {
+          border: 1px solid #000;
+        }
+      }
+    }
   }
   &__video {
+    // border: 1px solid #000;
     img {
-      border: 1px solid #000;
     }
   }
 }

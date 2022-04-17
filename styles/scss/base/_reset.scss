@@ -43,7 +43,7 @@ img {
   filter: drop-shadow(0 10px 50px rgba(1, 13, 130, 0.12));
   transition: $transition;
   &:hover {
-    color: $black;
+    color: $primary-color;
     background-color: $primary-variant-color;
   }
   &--primary {
