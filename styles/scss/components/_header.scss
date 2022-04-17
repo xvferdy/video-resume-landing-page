@@ -1,13 +1,12 @@
 @use "../abstracts/" as *;
 
 .header {
-  border: 1px solid #000;
+  // border: 1px solid #000;
   @extend %section;
   margin-top: 7rem;
-  .container {
+  &__container {
     @extend %container;
     display: grid;
-    place-items: center;
     gap: 2rem;
     grid-template-columns: 40% 60%;
   }
@@ -19,16 +18,28 @@
     gap: 2rem;
 
     &-cta {
-      a {
-        .btn--icon {
-          border: 1px solid #000;
-        }
-      }
+      display: flex;
+      gap: 2.6rem;
     }
   }
   &__video {
     // border: 1px solid #000;
     img {
+    }
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+  @include display(phone) {
+    &__content {
+      &-cta {
+        gap: 1.6rem;
+      }
     }
   }
 }

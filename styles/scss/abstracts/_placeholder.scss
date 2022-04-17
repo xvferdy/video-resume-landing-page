@@ -2,13 +2,15 @@
 @use "./mixins" as *;
 
 %section {
-  min-height: 100vh;
+  // min-height: 100vh;
+  min-height: auto;
   &:nth-child(4) {
     background-color: $white; // note: header is not a sibling
   }
 
   // MEDIA-QUERIES
   @include display(tab-port) {
+    // min-height: auto;
   }
   @include display(phone) {
   }
@@ -29,7 +31,6 @@
     max-width: $width-md;
   }
   @include display(phone) {
-    background-color: pink;
     max-width: $width-sm;
   }
 }

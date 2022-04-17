@@ -35,7 +35,7 @@ img {
   width: max-content;
   display: inline-block;
   font-size: 1.6rem;
-  padding: 1.3rem 3.4rem;
+  padding: 1.8rem 3.4rem;
   border-radius: 0.8rem;
   background-color: $background-color;
   color: $primary-color;
@@ -50,10 +50,26 @@ img {
     background-color: $primary-color;
     color: $white;
   }
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .icon {
+      width: auto;
+    }
+  }
 
   // MEDIA-QUERIES
+  @include display(phone) {
+    padding: 1rem 2rem;
+  }
   @include display(sm-phone) {
-    // font-size: 12px;
-    // padding: 0.45rem 0.6rem;
+    font-size: 1.2rem;
+    &--icon {
+      .icon {
+        display: none;
+      }
+    }
   }
 }

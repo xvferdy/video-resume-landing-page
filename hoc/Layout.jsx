@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function Layout({ children }) {
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
       {children}
       <Footer />
     </>

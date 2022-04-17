@@ -18,8 +18,19 @@ function Header() {
               <a className="btn btn--primary">Get Started</a>
             </Link>
             <Link href="#get-started" passHref>
-              <a className="btn">
-                <Image src="/assets/play-circle.png" width={24} height={24} />{" "}
+              <a className="btn btn--icon">
+                {/* <Image
+                  className="icon"
+                  src="/assets/play-circle.png"
+                  width={24}
+                  height={24}
+                />{" "} */}
+                <img
+                  className="icon"
+                  src="/assets/play-circle.png"
+                  width={24}
+                  height={24}
+                />{" "}
                 Watch Demo
               </a>
             </Link>
