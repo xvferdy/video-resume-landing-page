@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.header {
+  border: 1px solid #000;
+  @extend %section;
+  margin-top: 7rem;
+  .container {
+    @extend %container;
+  }
+}

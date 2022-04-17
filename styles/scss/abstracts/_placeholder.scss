@@ -1,0 +1,30 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+%section {
+  min-height: 100vh;
+  &:nth-child(4) {
+    background-color: $white; // note: header is not a sibling
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+  }
+  @include display(phone) {
+  }
+}
+
+%container {
+  border: 1px solid #000;
+  max-width: $width-lg;
+  margin: 0 auto;
+
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+    max-width: $width-md;
+  }
+  @include display(phone) {
+    background-color: pink;
+    max-width: $width-sm;
+  }
+}

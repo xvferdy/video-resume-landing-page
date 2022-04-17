@@ -1,3 +1,16 @@
+// ■━■━■━■ base ■━■━■━■
 @use "./base/reset";
 @use "./base/typography";
+
+// ■━■━■━■ components ■━■━■━■
+@use "./components/header";
+@use "./components/get-started";
+@use "./components/about";
+@use "./components/pricing";
+@use "./components/testimonials";
+@use "./components/contact";
+
+// ■━■━■━■ layout ■━■━■━■
 @use "./layouts/layout";
+@use "./layouts/nav";
+@use "./layouts/footer";

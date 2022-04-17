@@ -1,9 +1,9 @@
 @use "../abstracts/" as *;
 
 main {
-  max-width: 1110px;
-  background-color: aquamarine;
   margin: 0 auto;
+  display: grid;
+  gap: 7rem;
   @include display(tab-port) {
   }
   @include display(phone) {
@@ -11,17 +11,9 @@ main {
 }
 
 section {
-  // MEDIA-QUERIES
-  @include display(tab-port) {
-  }
-  @include display(phone) {
-  }
+  @extend %section;
 }
 
-.container {
-  // MEDIA-QUERIES
-  @include display(tab-port) {
-  }
-  @include display(phone) {
-  }
+section .container {
+  @extend %container;
 }
