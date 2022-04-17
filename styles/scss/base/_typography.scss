@@ -2,6 +2,7 @@
 
 p {
   font-size: 1.8rem;
+  color: $text-main-color;
   line-height: 180.2%;
   // MEDIA-QUERIES
   @include display(sm-phone) {
@@ -11,8 +12,24 @@ p {
 
 h1,
 h2 {
+  color: $primary-color;
   line-height: 144%;
   font-weight: map-get($font-weights, bold);
+  position: relative;
+}
+h1 {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    width: 274px;
+    height: 14px;
+    background: url("../../../public/assets/path.png");
+    background-repeat: no-repeat;
+    @include display(sm-phone) {
+      background: none;
+    }
+  }
 }
 
 h3,
@@ -32,7 +49,7 @@ h3 {
   color: $primary-variant-color;
   // MEDIA-QUERIES
   @include display(sm-phone) {
-    font-size: 17px;
+    // font-size: 17px;
   }
 }
 h4 {

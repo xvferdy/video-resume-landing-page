@@ -15,10 +15,12 @@
 }
 
 %container {
-  border: 1px solid #000;
+  // border: 1px solid #000;
   max-width: $width-lg;
   margin: 0 auto;
-
+  & > h3 {
+    margin-bottom: 2rem;
+  }
   // MEDIA-QUERIES
   @include display(tab-port) {
     max-width: $width-md;

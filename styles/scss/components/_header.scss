@@ -6,5 +6,23 @@
   margin-top: 7rem;
   .container {
     @extend %container;
+    display: grid;
+    // place-items: center;
+    grid-template-columns: 40% 60%;
+  }
+  &__cta {
+    // border: 1px solid #000;
+    // h3 {
+    //   margin-bottom: 2rem;
+    // }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  &__video {
+    img {
+      border: 1px solid #000;
+    }
   }
 }

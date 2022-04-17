@@ -7,7 +7,7 @@ function Nav() {
       <div className="container nav__container">
         {/* LOGO */}
         <div className="nav__logo">
-          <Image src="/assets/youtube.png" width={33} height={33} alt="logo" />
+          {/* <Image src="/assets/youtube.png" width={33} height={33} alt="logo" /> */}
           <h3>Visume</h3>
         </div>
         {/* LIST */}
