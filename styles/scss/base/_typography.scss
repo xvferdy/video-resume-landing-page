@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+p {
+  font-size: 1.8rem;
+  line-height: 180.2%;
+  // MEDIA-QUERIES
+  @include display(sm-phone) {
+    // font-size: 1.4rem;
+  }
+}
+
+h1,
+h2 {
+  line-height: 144%;
+  font-weight: map-get($font-weights, bold);
+}
+
+h3,
+h4,
+h5 {
+  font-weight: map-get($font-weights, semi-bold);
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2rem;
+  color: $primary-variant-color;
+  // MEDIA-QUERIES
+  @include display(sm-phone) {
+    font-size: 17px;
+  }
+}
+h4 {
+}
+h5 {
+}

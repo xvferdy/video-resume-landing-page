@@ -1,0 +1,43 @@
+/* === COLORS === */
+$background-color: #f8fbfe;
+$background-variant-color: #dfe1fe;
+$primary-color: #010d82;
+// $primary-shadow-color: #010d82;
+$primary-variant-color: #51c9ff;
+$text-main-color: #84879e;
+$text-video-color: rgba(0, 0, 0, 0.7);
+
+$white: #fff;
+$black: #000;
+$orange-color: #ffc46b;
+$light-blue-color: #def5ff;
+$very-light-blue-color: #f2f7fb;
+$red-tomatoish-color: #f87f81; //(header h1)
+$cyan-color: #9affed; //(header)
+
+$gray-border-color: #ededed; //(about avatar)
+$gray-logo-color: #f1f2ff; //(logo brand after header)
+$orange-color: #ffdba5; //(header)
+$yellow-color: #fcff8d; //(header)
+$theme-colors: (
+  "primary": $primary-color,
+);
+
+/* === FONTS === */
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+$font-weights: (
+  "light-italic": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+);
+$primary-font: "Poppins", sans-serif;
+
+/* === CONTAINERS === */
+$width-lg: 75%;
+$width-md: 86%;
+$width-sm: 90%;
+
+/* === TRAANSITIONS === */
+$transition: 0.3s all ease;

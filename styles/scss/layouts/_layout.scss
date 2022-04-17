@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+main {
+  max-width: 1110px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  @include display(tab-port) {
+  }
+  @include display(phone) {
+  }
+}
+
+section {
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+  }
+  @include display(phone) {
+  }
+}
+
+.container {
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+  }
+  @include display(phone) {
+  }
+}
