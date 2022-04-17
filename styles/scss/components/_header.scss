@@ -3,12 +3,14 @@
 .header {
   // border: 1px solid #000;
   @extend %section;
-  margin-top: 7rem;
+  margin-top: 17rem;
   &__container {
     @extend %container;
     display: grid;
-    gap: 2rem;
-    grid-template-columns: 40% 60%;
+    // gap: 2rem;
+    gap: 2%;
+    grid-template-columns: 39% 59%;
+    // grid-template-columns: 1fr 1fr;
   }
   &__content {
     // border: 1px solid #000;
@@ -23,7 +25,9 @@
     }
   }
   &__video {
-    // border: 1px solid #000;
+    // border: 1px solid rgb(190, 10, 10);
+    display: grid;
+    place-items: center;
     img {
     }
   }

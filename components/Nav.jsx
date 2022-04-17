@@ -1,22 +1,52 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Nav() {
   return (
     <nav className="nav">
       <div className="container nav__container">
         {/* LOGO */}
-        <div className="nav__logo">
-          {/* <Image src="/assets/youtube.png" width={33} height={33} alt="logo" /> */}
-          <h3>Visume</h3>
-        </div>
+
+        {/* <a className="nav__logo" href="#">
+          <Image src="/assets/youtube.png" width={33} height={33} alt="logo" />
+          <a href="#">Visume</a>
+        </a> */}
+
+        <a className="nav__logo" href="#">
+          <img src="/assets/youtube.png" alt="logo" />
+          <a href="#">Visume</a>
+        </a>
+
+        {/* <Link href="#" passHref>
+          <div className="nav__logo">
+            <Image
+              src="/assets/youtube.png"
+              width={33}
+              height={33}
+              alt="logo"
+            />
+            <Link href="#">Visume</Link>
+          </div>
+        </Link> */}
+
         {/* LIST */}
         <ul className="nav__list">
-          <li>Get Started</li>
-          <li>About</li>
-          <li>Pricing</li>
-          <li>Testimonials</li>
-          <li>Contact</li>
+          <li>
+            <a href="#get-started">Get Started</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
         {/* CTA */}
         <div className="nav__cta">

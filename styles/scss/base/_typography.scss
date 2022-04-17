@@ -9,6 +9,16 @@ p {
     font-size: 1.4rem;
   }
 }
+a {
+  color: $primary-color;
+  font-size: 1.6rem;
+  transition: $transition;
+  &:hover {
+    color: $primary-variant-color;
+    // text-shadow: 0px 0px 6px $light;
+    // filter: drop-shadow(0 0 5px $gold);
+  }
+}
 
 h1,
 h2 {

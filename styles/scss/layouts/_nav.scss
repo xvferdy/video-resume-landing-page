@@ -1,3 +1,21 @@
+@use "../abstracts/" as *;
+
 .nav {
-  border: 1px solid rgb(255, 96, 207);
+  // background-color: $very-light-blue-color;
+  background-color: rgba($very-light-blue-color, 0.9);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 8.6rem;
+  z-index: 5;
+
+  // MEDIA-QUERIES
+  @include display(tab-land) {
+    background-color: aqua;
+  }
+  @include display(tab-port) {
+  }
+  @include display(phone) {
+  }
 }
