@@ -3,6 +3,7 @@
 ## Todos
 **Easy**
 - check firefox inspector overflow on element tag
+- sidebar improve style
 **Hard**
 - re-assamble video
 **Optional**

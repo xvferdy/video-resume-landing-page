@@ -18,16 +18,21 @@
     align-items: center;
     // border: 1px solid #000;
   }
-
+  &__hamburger-icon {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    // z-index: 25;
+    img {
+      width: 26px;
+    }
+  }
   &__logo {
     display: flex;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
-    &-img {
-      // border: 1px solid #000;
-    }
-    a {
+    span {
       font-size: 2rem;
       font-weight: map-get($font-weights, bold);
     }
@@ -44,10 +49,21 @@
 
   // MEDIA-QUERIES
   @include display(tab-land) {
-    background-color: aqua;
+    &__hamburger-icon {
+      display: block;
+    }
+    &__logo,
+    &__list {
+      display: none;
+    }
   }
   @include display(tab-port) {
   }
   @include display(phone) {
+    &__hamburger-icon {
+      img {
+        width: 20px;
+      }
+    }
   }
 }

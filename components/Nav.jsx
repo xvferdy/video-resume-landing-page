@@ -2,12 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function Nav() {
+function Nav({ toggleSidebar }) {
   return (
     <nav className="nav">
       <div className="container nav__container">
-        {/* LOGO */}
+        {/* HAMBURGER */}
+        <button className="nav__hamburger-icon" onClick={toggleSidebar}>
+          <img src="/assets/icon-menu.SVG" alt="Menu" />
+        </button>
 
+        {/* LOGO */}
         {/* <a className="nav__logo" href="#">
           <Image src="/assets/youtube.png" width={33} height={33} alt="logo" />
           <a href="#">Visume</a>
@@ -15,7 +19,7 @@ function Nav() {
 
         <a className="nav__logo" href="#">
           <img src="/assets/youtube.png" alt="logo" />
-          <a href="#">Visume</a>
+          <span href="#">Visume</span>
         </a>
 
         {/* <Link href="#" passHref>

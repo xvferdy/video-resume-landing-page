@@ -2,11 +2,12 @@ import React from "react";
 import Nav from "../components/Nav";
 
 import Footer from "../components/Footer";
+import Navigation from "./Navigation";
 
 function Layout({ children }) {
   return (
     <>
-      <Nav />
+      <Navigation />
       {children}
       <Footer />
     </>
