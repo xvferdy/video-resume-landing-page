@@ -33,6 +33,7 @@ img {
 
 // buat page folder - include btn each
 .btn {
+  @extend %shadow;
   width: max-content;
   display: inline-block;
   font-size: 1.6rem;
@@ -41,7 +42,6 @@ img {
   background-color: $background-color;
   color: $primary-color;
   cursor: pointer;
-  @extend %shadow;
   transition: $transition;
   &:hover {
     color: $primary-color;

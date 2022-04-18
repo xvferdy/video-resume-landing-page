@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .get-started {
-  border: 1px solid rgb(9, 255, 0);
   margin-bottom: 10rem;
   &__container {
     // border: 1px solid rgb(170, 0, 0);
@@ -16,8 +15,9 @@
       // border: 1px solid #000;
       position: relative;
       display: flex;
-
       width: fit-content;
+      flex-direction: column;
+      gap: 2rem;
 
       // USER IMG - SIGNUP
       .signup {
@@ -57,11 +57,12 @@
         right: -5rem;
 
         border-radius: 0.8rem;
-        h4 {
+        .review-name {
           margin-top: 1.3rem;
           font-size: 1.6rem;
         }
         .star {
+          margin-top: 0.2rem;
           display: flex;
           align-items: center;
           gap: 0.5rem;
@@ -115,6 +116,62 @@
       }
       h4 {
         margin-bottom: 0.9rem;
+      }
+    }
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+    &__container {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+    &__user {
+      &-image {
+        .signup {
+          transform: translate(-20%, -40%);
+        }
+        .review {
+          transform: translate(-140%, -20%);
+        }
+      }
+    }
+  }
+  @include display(phone) {
+    &__container {
+      gap: 5.4rem;
+    }
+    &__user {
+      &-image {
+        .signup {
+          position: static;
+          transform: translate(0, 0);
+          &-text {
+            small {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .review {
+          position: static;
+          transform: translate(0, 0);
+        }
+      }
+    }
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      &-card {
+        .card-image {
+          margin-bottom: 1.7rem;
+        }
+        .card-num {
+          right: 2.4rem;
+          top: 2.4rem;
+          height: 3.3rem;
+          width: 3.3rem;
+          font-size: 1.6rem;
+        }
       }
     }
   }

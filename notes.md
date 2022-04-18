@@ -23,9 +23,12 @@
   - Header component: 11.22pm - 1.14
   - Nav & Sidebar component: 2.14pm - 6.03pm
   - fix some style: 4.00pm - 4.53pm 
-  - GetStarted component: 4.55pm - 
+  - GetStarted component: 4.55pm - 8.06pm
 
 ## Learned
 - map x times
+
+## Others
+- atur semua font size di semua layout/ responsive terlebih dahulu atau pakai clamp
 
 

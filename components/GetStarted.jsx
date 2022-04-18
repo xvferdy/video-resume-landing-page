@@ -43,7 +43,7 @@ function GetStarted() {
                 height={64}
                 alt="Review"
               />
-              <h4>Michael Yen</h4>
+              <h4 className="review-name">Michael Yen</h4>
               <small>Content Writer</small>
               <div className="star">
                 <p className="star-num">5.0</p>
