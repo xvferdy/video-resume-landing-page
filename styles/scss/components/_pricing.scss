@@ -1,3 +1,79 @@
+@use "../abstracts/" as *;
+
 .pricing {
   border: 1px solid rgb(0, 255, 221);
+  &__container {
+    .pricing__classes-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3.8rem;
+      margin-top: 12.2rem;
+    }
+  }
+  &__plan {
+    @extend %shadow;
+    background-color: $background-color;
+    border-radius: 0.8rem;
+    padding: 4.6rem;
+    padding-bottom: 12.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .pricing-header {
+      min-height: 11.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      // border: 1px solid #000;
+    }
+    &-name {
+      font-size: 2.2rem;
+      // line-height: 14px;
+    }
+    &-price {
+      font-size: 3.2rem;
+      margin-bottom: -1rem;
+    }
+    &-info {
+      // border: 1px solid #000;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    .divider {
+      height: 1px;
+      width: 100%;
+      background-color: lightgray;
+      margin-top: 2.3rem;
+      margin-bottom: 3.3rem;
+    }
+    &-list {
+      // align-items: center;
+      margin-bottom: 2.2rem;
+      // border: 1px solid #000;
+      p {
+        display: inline-block;
+        padding-left: 1rem;
+        font-size: 1.4rem;
+        color: $primary-color;
+        position: relative;
+        transform: translateY(-0.5rem);
+      }
+    }
+
+    &--promo {
+      transform: translateY(-5rem);
+      background-color: $primary-color;
+      .divider {
+        background-color: $text-main-color;
+      }
+      .pricing__plan-name,
+      .pricing__plan-price,
+      .pricing__plan-info,
+      .pricing__plan-benefit {
+        color: $white;
+      }
+    }
+  }
 }

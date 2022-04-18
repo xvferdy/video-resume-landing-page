@@ -60,6 +60,22 @@ img {
       width: auto;
     }
   }
+  &--plan {
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 4.6rem;
+    color: $primary-variant-color;
+    background-color: $white;
+    border: 1px solid $primary-variant-color;
+  }
+
+  &--plan-promo {
+    background-color: $primary-variant-color;
+    color: $primary-color;
+    &:hover {
+      background-color: $white;
+    }
+  }
 
   // MEDIA-QUERIES
   @include display(phone) {
