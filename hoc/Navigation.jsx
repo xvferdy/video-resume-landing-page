@@ -11,6 +11,7 @@ function Navigation() {
   const closeSidebar = () => {
     setToggle(false);
   };
+  
   return (
     <>
       <Nav toggleSidebar={handleToggle} />

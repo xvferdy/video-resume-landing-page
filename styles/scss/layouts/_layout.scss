@@ -3,7 +3,7 @@
 main {
   margin: 0 auto;
   display: grid;
-  gap: 7rem;
+  gap: 3rem;
 
   // MEDIA-QUERIES
   @include display(tab-port) {

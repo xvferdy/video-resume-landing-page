@@ -4,15 +4,32 @@
 %section {
   // min-height: 100vh;
   min-height: auto;
+  padding: 4rem 0;
   &:nth-child(4) {
     background-color: $white; // note: header is not a sibling
+  }
+  & > .title {
+    max-width: $width-lg;
+    margin: 0 auto;
+    & > h2 {
+      margin-bottom: 2.6rem;
+    }
+    & > h3 {
+      margin-bottom: 2rem;
+    }
   }
 
   // MEDIA-QUERIES
   @include display(tab-port) {
     // min-height: auto;
+    & > .title {
+      max-width: $width-md;
+    }
   }
   @include display(phone) {
+    & > .title {
+      max-width: $width-sm;
+    }
   }
 }
 
@@ -20,12 +37,7 @@
   // border: 1px solid #000;
   max-width: $width-lg;
   margin: 0 auto;
-  & > h2 {
-    margin-bottom: 2.6rem;
-  }
-  & > h3 {
-    margin-bottom: 2rem;
-  }
+
   // MEDIA-QUERIES
   @include display(tab-port) {
     max-width: $width-md;

@@ -1,3 +1,10 @@
+@use "../abstracts/" as *;
+
 .get-started {
-  border: 1px solid rgb(9, 255, 0);
+  // border: 1px solid rgb(9, 255, 0);
+  &__title {
+    // @extend %title;
+  }
+  &__container {
+  }
 }
