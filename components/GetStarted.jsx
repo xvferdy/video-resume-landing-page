@@ -19,6 +19,7 @@ function GetStarted() {
               height={507}
               alt="User"
             />
+
             {/* USER IMG - SIGNUP */}
             <div className="signup">
               <div className="signup-image">
@@ -29,8 +30,10 @@ function GetStarted() {
                   alt="Check"
                 />
               </div>
-              <h4>The best decision</h4>
-              <small>June 2021 - 128 signups</small>
+              <div className="signup-text">
+                <h4>The best decision</h4>
+                <small>June 2021 - 128 signups</small>
+              </div>
             </div>
             {/* USER IMG - REVIEW */}
             <div className="review">
@@ -56,7 +59,29 @@ function GetStarted() {
             </div>
           </div>
         </div>
-        <div className="get-started__content"></div>
+
+        {/* CONTENT */}
+        <div className="get-started__content">
+          {[...Array(4)].map((e, i) => (
+            <article className="get-started__content-card">
+              <div className="card-image">
+                <Image
+                  src="/assets/stack.png"
+                  width={24}
+                  height={24}
+                  alt="Icon"
+                />
+              </div>
+
+              <div className="card-num">01</div>
+              <h4>Create an account</h4>
+              <small>
+                You need to create an account. You can do this by clicking on
+                the Sign up button above.
+              </small>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

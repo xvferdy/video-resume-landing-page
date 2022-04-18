@@ -2,7 +2,120 @@
 
 .get-started {
   border: 1px solid rgb(9, 255, 0);
-
+  margin-bottom: 10rem;
   &__container {
+    // border: 1px solid rgb(170, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11.7rem;
+  }
+
+  &__user {
+    // USER IMG
+    &-image {
+      // border: 1px solid #000;
+      position: relative;
+      display: flex;
+
+      width: fit-content;
+
+      // USER IMG - SIGNUP
+      .signup {
+        @extend %shadow;
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+        padding: 1rem;
+        border-radius: 0.8rem;
+        background-color: $white;
+        position: absolute;
+        top: 10rem;
+        right: -17rem;
+        &-image {
+          background-color: $red-tomatoish-color;
+          display: grid;
+          place-items: center;
+          padding: 1.7rem;
+          border-radius: 0.8rem;
+        }
+        &-text {
+          small {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      // USER IMG - REVIEW
+      .review {
+        @extend %shadow;
+        background-color: $white;
+        display: grid;
+        place-items: center;
+        padding: 2.3rem 5.4rem;
+        position: absolute;
+        bottom: -10rem;
+        right: -5rem;
+
+        border-radius: 0.8rem;
+        h4 {
+          margin-top: 1.3rem;
+          font-size: 1.6rem;
+        }
+        .star {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          &-num {
+            color: $primary-color;
+            font-size: 1.2rem;
+            font-weight: map-get($font-weights, medium);
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5.6rem;
+    &-card {
+      @extend %shadow;
+
+      padding: 2.4rem;
+      border-radius: 0.8rem;
+      background-color: $white;
+      position: relative;
+      // max-width: 23rem;
+      // max-height: 23rem;
+
+      .card-image {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        background-color: $very-light-blue-color;
+        border-radius: 0.6rem;
+        padding: 0.8rem;
+        margin-bottom: 2.5rem;
+      }
+      .card-num {
+        position: absolute;
+        right: -2rem;
+        top: -2rem;
+        background-color: $light-blue-color;
+        color: $primary-variant-color;
+        border-radius: 50%;
+        height: 5.3rem;
+        width: 5.3rem;
+        display: grid;
+        place-items: center;
+
+        font-size: 1.8rem;
+        font-weight: map-get($font-weights, semi-bold);
+      }
+      h4 {
+        margin-bottom: 0.9rem;
+      }
+    }
   }
 }
