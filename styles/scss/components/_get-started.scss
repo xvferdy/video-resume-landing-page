@@ -122,6 +122,7 @@
 
   // MEDIA-QUERIES
   @include display(tab-port) {
+    margin-bottom: 0;
     &__container {
       grid-template-columns: 1fr;
       place-items: center;

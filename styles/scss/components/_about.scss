@@ -1,8 +1,6 @@
 @use "../abstracts/" as *;
 
 .about {
-  border: 1px solid rgb(55, 0, 255);
-
   &__container {
     // border: 1px solid #000;
     display: grid;
@@ -54,6 +52,48 @@
         &-quote {
           font-weight: map-get($font-weights, light-italic);
           font-style: italic;
+        }
+      }
+    }
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    &__content {
+      gap: 2rem;
+      &-cta {
+        margin-top: 2.4rem;
+      }
+    }
+    &__user {
+      &-image {
+        top: 0;
+        max-width: 33rem;
+      }
+    }
+  }
+  @include display(phone) {
+    &__content {
+      &-cta {
+        gap: 1.6rem;
+      }
+    }
+    &__user {
+      justify-content: center;
+      &-image {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+      }
+
+      &-image {
+        .review {
+          position: static;
+          max-width: 100%;
         }
       }
     }

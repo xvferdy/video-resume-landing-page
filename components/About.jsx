@@ -6,7 +6,7 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="title">
-        <h3>We’re on a mission</h3>
+        <h3>We're on a mission</h3>
         <h2>About Visume</h2>
       </div>
       <div className="container about__container">
@@ -22,7 +22,7 @@ function About() {
             themseleves than plain texts for the employees.
           </p>
           <p>
-            With 20+ years on the video production industry, you’re on the right
+            With 20+ years on the video production industry, you're on the right
             hands.
           </p>
           <div className="about__content-cta">
@@ -31,7 +31,7 @@ function About() {
             </Link>
             <Link href="#get-started" passHref>
               <a className="btn btn--icon">
-                <Image
+                <img
                   className="icon"
                   src="/assets/play-circle.png"
                   width={24}
