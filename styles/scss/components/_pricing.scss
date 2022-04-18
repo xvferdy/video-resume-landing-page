@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .pricing {
-  border: 1px solid rgb(0, 255, 221);
   &__container {
     .pricing__classes-container {
       display: grid;
@@ -13,7 +12,7 @@
   &__plan {
     @extend %shadow;
     background-color: $background-color;
-    border-radius: 0.8rem;
+    border-radius: 2rem;
     padding: 4.6rem;
     padding-bottom: 12.1rem;
     display: flex;
@@ -54,11 +53,11 @@
       // border: 1px solid #000;
       p {
         display: inline-block;
-        padding-left: 1rem;
+        padding-left: 0.8rem;
         font-size: 1.4rem;
         color: $primary-color;
         position: relative;
-        transform: translateY(-0.5rem);
+        transform: translateY(-0.6rem);
       }
     }
 
@@ -73,6 +72,52 @@
       .pricing__plan-info,
       .pricing__plan-benefit {
         color: $white;
+      }
+    }
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-land) {
+    &__container {
+      .pricing__classes-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 3.8rem;
+        max-width: fit-content;
+        margin: 0 auto;
+        margin-top: 4.2rem;
+      }
+    }
+    &__plan {
+      .pricing-header {
+        max-width: 30.5rem;
+      }
+      &--promo {
+        transform: translateY(0);
+      }
+    }
+  }
+  @include display(lg-phone) {
+    &__container {
+      .pricing__classes-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  @include display(sm-phone) {
+    &__plan {
+      .divider {
+        margin-bottom: 2.3rem;
+      }
+      &-list {
+        margin-bottom: 0;
+        text-align: center;
+        .list-icon {
+          display: none !important;
+        }
+        p {
+          display: block;
+        }
       }
     }
   }

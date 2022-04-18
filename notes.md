@@ -27,7 +27,7 @@
   - fix some style: 4.00pm - 4.53pm 
   - GetStarted component: 4.55pm - 8.06pm
   - About component: 8.06pm - 9.53pm
-  - Pricing component: 1.00am - 3.48am
+  - Pricing component: 1.00am - 4.32am
 
 ## :\(
 - tdk buat cta component
