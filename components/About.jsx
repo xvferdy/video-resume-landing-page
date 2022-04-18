@@ -25,21 +25,23 @@ function About() {
             With 20+ years on the video production industry, you’re on the right
             hands.
           </p>
-          <Link href="#get-started" passHref>
-            <a className="btn btn--primary">Get Started</a>
-          </Link>
-          <Link href="#get-started" passHref>
-            <a className="btn btn--icon">
-              <Image
-                className="icon"
-                src="/assets/play-circle.png"
-                width={24}
-                height={24}
-                alt="Icon"
-              />{" "}
-              Watch Demo
-            </a>
-          </Link>
+          <div className="about__content-cta">
+            <Link href="#get-started" passHref>
+              <a className="btn btn--primary">Get Started</a>
+            </Link>
+            <Link href="#get-started" passHref>
+              <a className="btn btn--icon">
+                <Image
+                  className="icon"
+                  src="/assets/play-circle.png"
+                  width={24}
+                  height={24}
+                  alt="Icon"
+                />{" "}
+                Watch Demo
+              </a>
+            </Link>
+          </div>
         </div>
 
         {/* USER */}
@@ -61,9 +63,11 @@ function About() {
                 height={64}
                 alt="User"
               />
-              <h4>Danny Mambo</h4>
-              <small>Founder of Visume</small>
-              <small>
+              <div className="review-name">
+                <h4>Danny Mambo</h4>
+                <small>Founder of Visume</small>
+              </div>
+              <small className="review-quote">
                 “If you can touch someone's life by contributing to their
                 success, you're god.”
               </small>

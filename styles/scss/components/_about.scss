@@ -1,3 +1,61 @@
+@use "../abstracts/" as *;
+
 .about {
   border: 1px solid rgb(55, 0, 255);
+
+  &__container {
+    // border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11.7rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    position: relative;
+    .sub-title {
+      color: $primary-color;
+      font-weight: map-get($font-weights, semi-bold);
+      span {
+        color: $red-tomatoish-color;
+      }
+    }
+    &-cta {
+      display: flex;
+      gap: 2.6rem;
+      margin-top: 5.4rem;
+    }
+  }
+
+  &__user {
+    display: flex;
+    justify-content: flex-end;
+    &-image {
+      position: relative;
+      top: -4rem;
+      width: fit-content;
+
+      .review {
+        @extend %shadow;
+        position: absolute;
+        bottom: 10%;
+        left: -14rem;
+        max-width: 22.9rem;
+        background-color: $white;
+        border-radius: 0.8rem;
+        padding: 2.4rem 2.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        &-quote {
+          font-weight: map-get($font-weights, light-italic);
+          font-style: italic;
+        }
+      }
+    }
+  }
 }

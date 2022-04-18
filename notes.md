@@ -26,6 +26,9 @@
   - fix some style: 4.00pm - 4.53pm 
   - GetStarted component: 4.55pm - 8.06pm
 
+## :\(
+- tdk buat cta component
+
 ## Learned
 - map x times
 
