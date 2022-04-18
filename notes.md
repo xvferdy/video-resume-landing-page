@@ -22,6 +22,10 @@
   - layout & general style: 9.05pm - 11.18pm
   - Header component: 11.22pm - 1.14
   - Nav & Sidebar component: 2.14pm - 6.03pm
-  - GetStarted component: 4.00pm - 
+  - fix some style: 4.00pm - 4.53pm 
+  - GetStarted component: 4.55pm - 
+
+## Learned
+- map x times
 
 

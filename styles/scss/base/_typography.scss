@@ -82,6 +82,15 @@ h5 {
   font-weight: map-get($font-weights, semi-bold);
 }
 h4 {
+  font-size: 1.8rem;
+  color: $primary-color;
+  line-height: 144%;
 }
 h5 {
+}
+
+small {
+  font-size: 1.2rem;
+  color: $text-main-color;
+  line-height: 175%;
 }
