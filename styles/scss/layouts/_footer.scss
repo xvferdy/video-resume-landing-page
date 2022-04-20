@@ -1,4 +1,110 @@
+@use "../abstracts/" as *;
+
 .footer {
-  background-color: rgb(49, 49, 49);
+  background-color: $primary-color;
   margin-top: 7rem;
+  padding: 5.3rem 0;
+  h4,
+  a,
+  p {
+    color: $white;
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  a:hover {
+    color: $primary-variant-color;
+  }
+
+  &__container {
+    @extend %container;
+    display: grid;
+    gap: 4rem;
+  }
+
+  &__permalinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+    text-align: center;
+    .address {
+      // border: 1px solid rgb(209, 5, 5);
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      align-items: center;
+      &__logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        // border: 1px solid #000;
+        // margin-bottom: 3.1rem;
+      }
+      &__socials {
+        // border: 1px solid #000;
+        display: flex;
+        gap: 2.6rem;
+        // margin-top: 3.1rem;
+      }
+    }
+    .usefull {
+      // border: 1px solid #000;
+      display: grid;
+      gap: 2.1rem;
+
+      li {
+        padding: 0.6rem 0;
+      }
+    }
+    .company {
+      // border: 1px solid #000;
+      display: grid;
+      gap: 2.1rem;
+
+      li {
+        padding: 0.6rem 0;
+      }
+    }
+    .newsletter {
+      // border: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      gap: 2.4rem;
+      form {
+        input {
+          padding: 2.4rem 1rem;
+          border-radius: 0.8rem;
+        }
+      }
+    }
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-land) {
+    &__permalinks {
+      grid-template-columns: 1fr 1fr;
+      gap: 7.4rem;
+      // border: 1px solid #000;
+    }
+    &__copyright {
+      text-align: center;
+    }
+  }
+
+  @include display(phone) {
+    &__permalinks {
+      grid-template-columns: 1fr;
+      gap: 5.4rem;
+      // border: 1px solid #000;
+      .newsletter {
+        form {
+          input {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

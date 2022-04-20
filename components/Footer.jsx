@@ -6,10 +6,10 @@ function Footer() {
   return (
     <footer id="footer" className="footer">
       <div className="container footer__container">
-        <div className="permalinks">
+        <div className="footer__permalinks">
           {/* ADDRESS */}
           <div className="address">
-            <a className="footer__logo" href="#">
+            <a className="address__logo" href="#">
               <Image
                 width={33}
                 height={33}
@@ -19,7 +19,7 @@ function Footer() {
               <h4 href="#">Visume</h4>
             </a>
             <p>2238 Partha Elen Street, New Jersey, USA, 3322145698</p>
-            <div className="footer__socials">
+            <div className="address__socials">
               <Link href="#" passHref>
                 <a>
                   <Image
@@ -91,7 +91,7 @@ function Footer() {
           </div>
 
           {/*OUR COMPANY */}
-          <div className="usefull">
+          <div className="company">
             <h4>Our Company</h4>
             <ul>
               <li>
@@ -118,7 +118,7 @@ function Footer() {
           </div>
 
           {/* NEWSLETTER */}
-          <div className="usefull">
+          <div className="newsletter">
             <h4>Subscribe to Newsletter</h4>
             <form>
               <input
@@ -131,6 +131,10 @@ function Footer() {
             <p>help@visume.link</p>
             <p>396-987 456 885</p>
           </div>
+        </div>
+
+        <div className="footer__copyright">
+          <small>&copy; 2021 Visume</small>
         </div>
       </div>
     </footer>
