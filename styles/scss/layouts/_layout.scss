@@ -17,11 +17,11 @@ main {
 section {
   @extend %section;
 
-  padding-top: 3rem; // main gap
+  padding-top: 4rem; // main gap
 
   // MEDIA-QUERIES
   @include display(tab-port) {
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
   @include display(phone) {
     padding-top: 0.1rem;

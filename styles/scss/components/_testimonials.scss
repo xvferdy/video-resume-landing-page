@@ -4,8 +4,6 @@
   &__container {
     display: grid;
     gap: 2.4rem;
-    .swiper-wrapper {
-    }
   }
   .testimonial {
     // @extend %shadow;
@@ -25,8 +23,6 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      .img {
-      }
     }
     &__content {
       display: flex;

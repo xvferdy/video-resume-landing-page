@@ -10,6 +10,7 @@
 - backdrop mixin or placeholder
 - brand
 - search ’ ganti '
+- list style atribut ganti type img
 **Hard**
 - re-assamble video
 - a to link
@@ -23,19 +24,20 @@
   - import style: 5.29pm - 7.38pm
   - layout & general style: 9.05pm - 11.18pm
   
-  
-
 - main 18 apr
   - Header component: 11.22pm - 1.14
   - Nav & Sidebar component: 2.14pm - 6.03pm
   - fix some style: 4.00pm - 4.53pm 
   - GetStarted component: 4.55pm - 8.06pm
   - About component: 8.06pm - 9.53pm
-  - testimonials: 
+
+- main 19 apr
+  - Pricing component: 1.00am - 4.32am
 
 - main 21 apr
-  - Pricing component: 11.00pm - 1.31am
-  - 
+  - Testimonials component: 11.00pm - 1.31am
+  - Contact component: 1.31am - 2.13am
+  - footer: 2.15am - 
 
 ## :\(
 - tdk buat cta component

@@ -1,3 +1,56 @@
+@use "../abstracts/" as *;
+
 .contact {
-  border: 1px solid rgb(195, 0, 255);
+  &__container {
+    background-color: $primary-variant-color;
+    padding: 8.8rem 21.2rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+
+    input,
+    textarea {
+      font-size: 16px;
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: $background-color;
+      // border: 2px solid $primary-variant-color;
+      resize: none;
+      color: $text-video-color;
+      &:focus {
+        outline: 1px solid $primary-color;
+      }
+    }
+    textarea {
+      grid-column: 1 / span 2;
+    }
+    button {
+      margin-top: 2.5rem;
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+
+  // MEDIA-QUERIES
+  @include display(tab-land) {
+    &__container {
+      padding: 4.8rem 11.2rem;
+    }
+    form {
+      grid-template-columns: 1fr;
+      textarea {
+        grid-column: 1;
+      }
+    }
+  }
+  @include display(phone) {
+    &__container {
+      padding: 2.4rem;
+    }
+  }
 }
