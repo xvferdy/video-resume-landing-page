@@ -76,6 +76,7 @@
         input {
           padding: 2.4rem 1rem;
           border-radius: 0.8rem;
+          min-width: 100%;
         }
       }
     }
@@ -87,13 +88,6 @@
       grid-template-columns: 1fr 1fr;
       gap: 7.4rem;
       // border: 1px solid #000;
-      .newsletter {
-        form {
-          input {
-            max-width: 100%;
-          }
-        }
-      }
     }
     &__copyright {
       text-align: center;

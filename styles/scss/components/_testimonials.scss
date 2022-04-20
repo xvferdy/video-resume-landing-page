@@ -44,6 +44,8 @@
       grid-template-columns: 32% 62%;
       gap: 6%;
       align-items: center;
+      min-height: 22rem;
+
       &__image {
         aspect-ratio: 1/1;
       }
@@ -57,10 +59,20 @@
   }
   @include display(phone) {
     .testimonial {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      place-items: center;
+      // grid-template-columns: 1fr;
+      // gap: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 3.3rem;
+
+      // place-items: center;
+
+      // justify-items: center;
+      // align-items: start;
+
       text-align: center;
+      max-height: 27rem;
       &__image {
         width: 77px;
         border-radius: 50%;
@@ -76,6 +88,11 @@
           margin-top: 1rem;
         }
       }
+    }
+  }
+  @include display(phone) {
+    .testimonial {
+      min-height: 35rem;
     }
   }
 }
