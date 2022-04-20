@@ -1,19 +1,138 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
     <footer id="footer" className="footer">
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{" "}
-        <span>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
+      <div className="container footer__container">
+        <div className="permalinks">
+          {/* ADDRESS */}
+          <div className="address">
+            <a className="footer__logo" href="#">
+              <Image
+                width={33}
+                height={33}
+                src="/assets/youtube.png"
+                alt="logo"
+              />
+              <h4 href="#">Visume</h4>
+            </a>
+            <p>2238 Partha Elen Street, New Jersey, USA, 3322145698</p>
+            <div className="footer__socials">
+              <Link href="#" passHref>
+                <a>
+                  <Image
+                    src="/assets/facebook.png"
+                    width={24}
+                    height={24}
+                    alt="Facebook"
+                  />
+                </a>
+              </Link>
+              <Link href="#" passHref>
+                <a>
+                  <Image
+                    src="/assets/twitter.png"
+                    width={24}
+                    height={24}
+                    alt="Twitter"
+                  />
+                </a>
+              </Link>
+              <Link href="#" passHref>
+                <a>
+                  <Image
+                    src="/assets/instagram.png"
+                    width={24}
+                    height={24}
+                    alt="Instagram"
+                  />
+                </a>
+              </Link>
+              <Link href="#" passHref>
+                <a>
+                  <Image
+                    src="/assets/linkedin.png"
+                    width={24}
+                    height={24}
+                    alt="Linkedin"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+
+          {/* USEFULL LINKS */}
+          <div className="usefull">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <Link href="#" passHref>
+                  <a>Payment & Tax</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" passHref>
+                  <a>Terms of Service</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" passHref>
+                  <a>Your Account</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" passHref>
+                  <a>Privacy Policy</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/*OUR COMPANY */}
+          <div className="usefull">
+            <h4>Our Company</h4>
+            <ul>
+              <li>
+                <Link href="#" passHref>
+                  <a>About us</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" passHref>
+                  <a>Media</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" passHref>
+                  <a>Blog</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" passHref>
+                  <a>Contact us</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* NEWSLETTER */}
+          <div className="usefull">
+            <h4>Subscribe to Newsletter</h4>
+            <form>
+              <input
+                name="subscribe"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
+            </form>
+            <p>help@visume.link</p>
+            <p>396-987 456 885</p>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

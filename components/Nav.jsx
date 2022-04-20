@@ -12,27 +12,10 @@ function Nav({ toggleSidebar }) {
         </button>
 
         {/* LOGO */}
-        {/* <a className="nav__logo" href="#">
-          <Image src="/assets/youtube.png" width={33} height={33} alt="logo" />
-          <a href="#">Visume</a>
-        </a> */}
-
         <a className="nav__logo" href="#">
           <img src="/assets/youtube.png" alt="logo" />
           <span href="#">Visume</span>
         </a>
-
-        {/* <Link href="#" passHref>
-          <div className="nav__logo">
-            <Image
-              src="/assets/youtube.png"
-              width={33}
-              height={33}
-              alt="logo"
-            />
-            <Link href="#">Visume</Link>
-          </div>
-        </Link> */}
 
         {/* LIST */}
         <ul className="nav__list">
