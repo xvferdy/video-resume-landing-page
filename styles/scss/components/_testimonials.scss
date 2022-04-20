@@ -1,3 +1,85 @@
+@use "../abstracts/" as *;
+
 .testimonials {
-  border: 1px solid rgb(0, 47, 255);
+  &__container {
+    display: grid;
+    gap: 2.4rem;
+    .swiper-wrapper {
+    }
+  }
+  .testimonial {
+    // @extend %shadow;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 10%;
+    background-color: $white;
+    padding: 2.4rem;
+    cursor: default;
+
+    &__image {
+      background-color: $primary-variant-color;
+      border-radius: 2rem;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      .img {
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: $width-lg;
+      &-name {
+        font-size: 1.6rem;
+        margin-top: 1.6rem;
+      }
+      &-testimony {
+        line-height: 175%;
+      }
+    }
+  }
+  // MEDIA-QUERIES
+  @include display(tab-land) {
+    .testimonial {
+      grid-template-columns: 32% 62%;
+      gap: 6%;
+      align-items: center;
+      &__image {
+        aspect-ratio: 1/1;
+      }
+      &__content {
+        max-width: 100%;
+        &-testimony {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  @include display(phone) {
+    .testimonial {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      place-items: center;
+      text-align: center;
+      &__image {
+        width: 77px;
+        border-radius: 50%;
+      }
+      &__content {
+        &-name {
+          order: 0;
+          margin-top: 0;
+        }
+        &-testimony {
+          order: 2;
+          font-size: 1.4rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }

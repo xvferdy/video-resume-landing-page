@@ -2,20 +2,30 @@
 
 main {
   margin: 0 auto;
-  display: grid;
-  gap: 3rem;
+  // display: grid; // swiper broke
+  // gap: 3rem;
 
   // MEDIA-QUERIES
   @include display(tab-port) {
     // gap: 4rem;
   }
   @include display(phone) {
-    gap: 0.1rem;
+    // gap: 0.1rem;
   }
 }
 
 section {
   @extend %section;
+
+  padding-top: 3rem; // main gap
+
+  // MEDIA-QUERIES
+  @include display(tab-port) {
+    padding-top: 4rem;
+  }
+  @include display(phone) {
+    padding-top: 0.1rem;
+  }
 }
 
 section .container {
