@@ -37,7 +37,7 @@
 - main 21 apr
   - Testimonials component: 11.00pm - 1.31am
   - Contact component: 1.31am - 2.13am
-  - footer: 2.15am - 
+  - footer: 2.15am - 3.39am
 
 ## :\(
 - tdk buat cta component

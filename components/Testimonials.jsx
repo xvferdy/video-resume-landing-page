@@ -14,21 +14,20 @@ function Testimonials() {
       name: "Linda Jermy",
       occupation: "Commerce Student",
       testimony:
-        "“With the traditional resumes I used to apply for jobs and would get only a few calls. But after creating a video resume, I’ve got 9/10 calls. And I love the simplicity of the video creation process being a non techie.”",
+        "“With the traditional resumes I used to apply for jobs and would get only a few calls. But after creating a video resume, I've got 9/10 calls. And I love the simplicity of the video creation process being a non techie.”",
     },
     {
-      img: "/assets/testimonial.png",
-      name: "Linda Jermy",
-      occupation: "Commerce Student",
-      testimony:
-        "“With the traditional resumes I used to apply for jobs and would get only a few calls. But after creating a video resume, I’ve got 9/10 calls. And I love the simplicity of the video creation process being a non techie.”",
+      img: "/assets/testimonial0.PNG",
+      name: "Akarin",
+      occupation: "Lewd by sister",
+      testimony: "“SERVIDORA.”",
     },
     {
-      img: "/assets/testimonial.png",
-      name: "Linda Jermy",
-      occupation: "Commerce Student",
+      img: "/assets/testimonial3.PNG",
+      name: "Hubert Kiwak",
+      occupation: "4th grader",
       testimony:
-        "“With the traditional resumes I used to apply for jobs and would get only a few calls. But after creating a video resume, I’ve got 9/10 calls. And I love the simplicity of the video creation process being a non techie.”",
+        "“I think this is an amazing discovery, I mean why don't we ever think about this concept? Ha..Ha..Ha... BTW since using Visume I get 2 times more calls than my previous resume.”",
     },
   ];
 
@@ -57,8 +56,8 @@ function Testimonials() {
                 <Image
                   className="img"
                   src={testimonial.img}
-                  width={331}
-                  height={331}
+                  width={347}
+                  height={347}
                   alt={testimonial.name}
                   // layout="responsive"
                 />
