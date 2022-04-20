@@ -28,12 +28,18 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2.4rem;
 
+    .content {
+      display: grid;
+      gap: 2.4rem;
+      // border: 1px solid #000;
+      height: 100%;
+    }
+
     .address {
       // border: 1px solid rgb(209, 5, 5);
       display: flex;
       flex-direction: column;
-      gap: 2.4rem;
-      justify-content: space-between;
+      gap: 3.3rem;
 
       &__logo {
         display: flex;
@@ -45,40 +51,35 @@
       &__socials {
         // border: 1px solid #000;
         display: flex;
+        align-items: center;
+
         gap: 2.6rem;
+
         // margin-top: 3.1rem;
       }
     }
     .usefull {
       // border: 1px solid #000;
       display: grid;
-      gap: 2.1rem;
-
-      li {
-        padding: 0.6rem 0;
-      }
+      gap: 3.3rem;
     }
     .company {
       // border: 1px solid #000;
       display: grid;
-      gap: 2.1rem;
-
-      li {
-        padding: 0.6rem 0;
-      }
+      gap: 3.3rem;
     }
     .newsletter {
       // border: 1px solid #000;
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      gap: 2.4rem;
-      justify-content: space-between;
+      gap: 3.3rem;
+
       form {
         input {
           padding: 2.4rem 1rem;
           border-radius: 0.8rem;
-          min-width: 100%;
+          width: 100%;
         }
       }
     }
@@ -104,6 +105,9 @@
       // border: 1px solid #000;
       .address {
         align-items: center;
+        &__socials {
+          justify-content: center;
+        }
       }
     }
   }
