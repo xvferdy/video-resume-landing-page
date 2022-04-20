@@ -17,14 +17,12 @@ main {
 section {
   @extend %section;
 
-  padding-top: 4rem; // main gap
+  padding-top: 8.6rem; // main gap & nav height
 
   // MEDIA-QUERIES
   @include display(tab-port) {
-    padding-top: 3rem;
   }
   @include display(phone) {
-    padding-top: 2.4rem;
   }
 }
 

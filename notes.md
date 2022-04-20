@@ -43,6 +43,7 @@
 - tdk buat cta component
 - stupid icon as list style
 - if main tag display grid/flex it will broke cuz swipper
+- horrible footer layout
 
 ## Learned
 - map x times

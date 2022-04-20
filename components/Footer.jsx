@@ -18,6 +18,7 @@ function Footer() {
               />
               <h4 href="#">Visume</h4>
             </a>
+
             <p>2238 Partha Elen Street, New Jersey, USA, 3322145698</p>
             <div className="address__socials">
               <Link href="#" passHref>

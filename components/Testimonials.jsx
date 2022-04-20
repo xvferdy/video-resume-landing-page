@@ -44,7 +44,7 @@ function Testimonials() {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 4500,
+          delay: 5700,
           disableOnInteraction: false,
         }}
         // navigation={true}
