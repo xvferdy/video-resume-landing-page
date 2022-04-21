@@ -3,13 +3,12 @@
 > Original source from 🏀 [Figma](https://www.figma.com/community/file/1046397565619660848) by **Subash Matheswaran**
 
 ## 📍 Table of Contents
-- [Video Resume Landing Page](#video-resume-landing-page)
-  - [📍 Table of Contents](#-table-of-contents)
-  - [✨ About the Project](#-about-the-project)
-  - [👀 Built with](#-built-with)
-  - [⏳ My process](#-my-process)
-  - [📦 Installation](#-installation)
-  - [😓 Difficult Things](#-difficult-things)
+- [Table of Contents](#-table-of-contents)
+- [About the Project](#-about-the-project)
+- [Built with](#-built-with)
+- [My process](#-my-process)
+- [Installation](#-installation)
+- [Difficult Things](#-difficult-things)
 
 ## ✨ About the Project
 Landing Page Webside Design for Video Resume Creator Web Application.
