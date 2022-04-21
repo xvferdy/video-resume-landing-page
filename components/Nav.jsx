@@ -6,7 +6,7 @@ function Nav({ toggleSidebar }) {
       <div className="container nav__container">
         {/* HAMBURGER */}
         <button className="nav__hamburger-icon" onClick={toggleSidebar}>
-          <img src="/assets/icon-menu.SVG" alt="Menu" />
+          <img src="/assets/icon-menu.svg" alt="Menu" />
         </button>
 
         {/* LOGO */}

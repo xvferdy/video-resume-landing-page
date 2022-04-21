@@ -16,13 +16,13 @@ function Testimonials() {
         "“With the traditional resumes I used to apply for jobs and would get only a few calls. But after creating a video resume, I've got 9/10 calls. And I love the simplicity of the video creation process being a non techie.”",
     },
     {
-      img: "/assets/testimonial0.PNG",
+      img: "/assets/testimonial0.png",
       name: "Akarin",
       occupation: "Lewd by sister",
       testimony: "“SERVIDORA.”",
     },
     {
-      img: "/assets/testimonial3.PNG",
+      img: "/assets/testimonial3.png",
       name: "Hubert Kiwak",
       occupation: "4th grader",
       testimony:
