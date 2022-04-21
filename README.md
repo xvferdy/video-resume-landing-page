@@ -49,10 +49,21 @@ Landing Page Webside Design for Video Resume Creator Web Application.
 > 🗓️ 
 
 ## 📦 Installation
-
-## 🥳 What I learned
+```
+npm install
+```
+```
+npm run dev
+```
 
 ## 😓 Difficult Things
+Things were difficult for me and I finally gave up 😓😓
+- [ ] Not creating `<CTA />` component
+- [ ] `<Footer />` layout not good
+- [ ] **Swiper** will broke if we put `display: grid` on `<main />` tag
+- [ ] List style non image
+- [ ] Horrible media queries
+- [ ] Not writing a clean **CSS** code
 
 <h3 align="right">
       <a href="#readme">To Top ⤴️</a>
