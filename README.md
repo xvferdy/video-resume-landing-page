@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Video Resume Landing Page
 
-## Getting Started
+> Original source from 🏀 [Figma](https://www.figma.com/community/file/1046397565619660848) by **Subash Matheswaran**
 
-First, run the development server:
+## 📍 Table of Contents
+- [About the Project](#-about-the-project)
+- [Built with](#-built-with)
+- [My process](#-my-process)
+- [Installation](#-installation)
+- [Difficult Things](#-difficult-things)
 
-```bash
+## ✨ About the Project
+Landing Page Webside Design for Video Resume Creator Web Application.
+
+👓 **Preview:**
+<p align="center">
+  <img src="./public/assets/preview.png">
+</p>
+
+🌍 **Demo:**
+
+## 👀 Built with
+- [Next JS](https://nextjs.org/ "Next JS")
+- Sass
+- ❤️
+
+## ⏳ My process
+<details>
+    <summary>⌛ I challenge my self to finish this for <b>~3 days</b></summary> <br>
+  
+> ▐ <br>
+> 🧑‍💻 ***Day 1.*** Studying the design  <br>
+> ▐ <sub>Sass boilerplate <kbd>~1 hour</kbd></sub> <br>
+> ▐ <sub>Import style guide <kbd>~2 hours</kbd></sub> <br>
+> ▐ <sub>HTML content + general layout style design <kbd>~2 hours</kbd></sub> <br>
+> ▐ <br>
+> 🧑‍💻 ***Day 2.*** Web layouting, working with **JSX**, **Sass** & **responsiveness** <br>
+> ▐ <sub>Header component <kbd>~2 hours</kbd></sub> <br>
+> ▐ <sub>Nav & Sidebar component <kbd>~4 hours</kbd></sub> <br>
+> ▐ <sub>GetStarted component <kbd>~3 hours</kbd></sub> <br>
+> ▐ <sub>About component <kbd>~2 hours</kbd></sub> <br>
+> ▐ <br>
+> 🧑‍💻 ***Day 3.*** Working with some **React** component <br>
+> ▐ <sub>Pricing component <kbd>~3.5 hours</kbd></sub> <br>
+> ▐ <br>
+> ⛱️ ***Day 4.*** Not doing any coding<br>
+> ▐ <br>
+> 🧑‍💻 ***Day 5.*** Working with some **React** component <br>
+> ▐ <sub>Testimonials component <kbd>~2.5 hours</kbd></sub> <br>
+> ▐ <sub>Contact component <kbd>1 hour</kbd></sub> <br>
+> ▐ <sub>Footer component <kbd>~1.5 hours</kbd></sub> <br>
+> ▐ <br>
+> 🗓️ ***Day 6 and forward.*** Continuing unfinished task <br>
+> ▐ <sub>Try to deploy</sub> <br>
+> ▐ <br>
+> 🗓️ 
+  
+</details>
+
+## 📦 Installation
+```
+npm install
+```
+```
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 😓 Difficult Things
+Things were difficult for me and I finally gave up 😓😓
+- [ ] Not creating `<CTA />` component
+- [ ] `<Footer />` layout not good
+- [ ] **Swiper** will broke if we put `display: grid` on `<main />` tag
+- [ ] List style non image
+- [ ] Horrible media queries
+- [ ] Not writing a clean **CSS** code
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h3 align="right">
+      <a href="#readme">To Top ⤴️</a>
+</h3>
