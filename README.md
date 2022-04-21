@@ -3,7 +3,6 @@
 > Original source from 🏀 [Figma](https://www.figma.com/community/file/1046397565619660848) by **Subash Matheswaran**
 
 ## 📍 Table of Contents
-- [Table of Contents](#-table-of-contents)
 - [About the Project](#-about-the-project)
 - [Built with](#-built-with)
 - [My process](#-my-process)
