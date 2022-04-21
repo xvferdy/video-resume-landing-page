@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
-
     input,
     textarea {
       font-size: 16px;
@@ -18,7 +17,6 @@
       padding: 1.5rem;
       border-radius: 0.5rem;
       background-color: $background-color;
-      // border: 2px solid $primary-variant-color;
       resize: none;
       color: $text-video-color;
       &:focus {

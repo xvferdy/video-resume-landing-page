@@ -10,7 +10,6 @@
   text-decoration: none;
   box-sizing: inherit;
   font-family: $primary-font;
-
   // border: 1px solid gray;
   // overflow-x: hidden;
 }
@@ -31,7 +30,6 @@ img {
   object-fit: cover;
 }
 
-// buat page folder - include btn each
 .btn {
   @extend %shadow;
   width: max-content;
@@ -68,7 +66,6 @@ img {
     background-color: $white;
     border: 1px solid $primary-variant-color;
   }
-
   &--plan-promo {
     background-color: $primary-variant-color;
     color: $primary-color;

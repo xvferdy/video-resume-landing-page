@@ -21,17 +21,13 @@
   gap: 2rem;
   padding: 2.4rem;
   padding-top: 3.2rem;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 40%;
   height: 100%;
   z-index: 10;
-  // background-color: $background-variant-color;
   background-color: $background-color;
-
-  // background-color: transparent;
   transition: $transition;
   .sidebar__close-icon {
     background: transparent;

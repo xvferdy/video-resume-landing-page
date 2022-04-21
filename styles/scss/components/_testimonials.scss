@@ -59,18 +59,9 @@
   }
   @include display(phone) {
     .testimonial {
-      // grid-template-columns: 1fr;
-      // gap: 1rem;
-
       display: flex;
       flex-direction: column;
       gap: 3.3rem;
-
-      // place-items: center;
-
-      // justify-items: center;
-      // align-items: start;
-
       text-align: center;
       max-height: 27rem;
       &__image {

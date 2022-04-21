@@ -3,7 +3,6 @@
 .get-started {
   margin-bottom: 10rem;
   &__container {
-    // border: 1px solid rgb(170, 0, 0);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18.7rem;
@@ -12,7 +11,6 @@
   &__user {
     // USER IMG
     &-image {
-      // border: 1px solid #000;
       position: relative;
       display: flex;
       width: fit-content;
@@ -82,14 +80,10 @@
     gap: 2.4rem;
     &-card {
       @extend %shadow;
-
       padding: 2.4rem;
       border-radius: 0.8rem;
       background-color: $white;
       position: relative;
-      // max-width: 23rem;
-      // max-height: 23rem;
-
       .card-image {
         display: flex;
         align-items: center;
@@ -110,7 +104,6 @@
         width: 5.3rem;
         display: grid;
         place-items: center;
-
         font-size: 1.8rem;
         font-weight: map-get($font-weights, semi-bold);
       }

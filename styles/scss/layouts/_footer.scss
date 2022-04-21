@@ -31,50 +31,37 @@
     .content {
       display: grid;
       gap: 2.4rem;
-      // border: 1px solid #000;
       height: 100%;
     }
 
     .address {
-      // border: 1px solid rgb(209, 5, 5);
       display: flex;
       flex-direction: column;
       gap: 3.3rem;
-
       &__logo {
         display: flex;
         align-items: center;
         gap: 1rem;
-        // border: 1px solid #000;
-        // margin-bottom: 3.1rem;
       }
       &__socials {
-        // border: 1px solid #000;
         display: flex;
         align-items: center;
-
         gap: 2.6rem;
-
-        // margin-top: 3.1rem;
       }
     }
     .usefull {
-      // border: 1px solid #000;
       display: grid;
       gap: 3.3rem;
     }
     .company {
-      // border: 1px solid #000;
       display: grid;
       gap: 3.3rem;
     }
     .newsletter {
-      // border: 1px solid #000;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       gap: 3.3rem;
-
       form {
         input {
           padding: 2.4rem 1rem;
@@ -90,7 +77,6 @@
     &__permalinks {
       grid-template-columns: 1fr 1fr;
       gap: 7.4rem;
-      // border: 1px solid #000;
     }
     &__copyright {
       text-align: center;
@@ -102,7 +88,6 @@
       grid-template-columns: 1fr;
       gap: 5.4rem;
       text-align: center;
-      // border: 1px solid #000;
       .address {
         align-items: center;
         &__socials {

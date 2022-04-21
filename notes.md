@@ -8,7 +8,7 @@
 - [ ] sidebar improve style
 - [x] useToggle custom hooks
 - [x] backdrop mixin or placeholder
-- [ ] brand
+- [x] brand
 - [x] search ’ ganti '
 - [ ] list style atribut ganti type img
 **Hard**

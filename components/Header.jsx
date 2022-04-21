@@ -19,12 +19,6 @@ function Header() {
             </Link>
             <Link href="#get-started" passHref>
               <a className="btn btn--icon">
-                {/* <Image
-                  className="icon"
-                  src="/assets/play-circle.png"
-                  width={24}
-                  height={24}
-                />{" "} */}
                 <img
                   className="icon"
                   src="/assets/play-circle.png"

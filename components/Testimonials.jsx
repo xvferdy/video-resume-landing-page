@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import { Navigation, Scrollbar, A11y, Autoplay } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import "swiper/css/pagination";
 
 function Testimonials() {
@@ -39,7 +38,7 @@ function Testimonials() {
       </div>
       <Swiper
         className="container testimonials__container"
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay]}
         spaceBetween={40}
         slidesPerView={1}
         loop={true}
@@ -47,7 +46,6 @@ function Testimonials() {
           delay: 5700,
           disableOnInteraction: false,
         }}
-        // navigation={true}
       >
         {testimonials.map((testimonial, i) => (
           <SwiperSlide key={i}>
@@ -59,7 +57,6 @@ function Testimonials() {
                   width={347}
                   height={347}
                   alt={testimonial.name}
-                  // layout="responsive"
                 />
               </div>
               <div className="testimonial__content">

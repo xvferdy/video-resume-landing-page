@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 function Sidebar({ isOpen, closeSidebar }) {
   const style = isOpen ? "sidebar sidebar--open" : "sidebar sidebar--closed";
@@ -8,8 +7,6 @@ function Sidebar({ isOpen, closeSidebar }) {
       {isOpen && <div className="backdrop" onClick={closeSidebar} />}
 
       <nav className={style}>
-        {/* <Image src="/assets/icon-menu.SVG" width={15} height={15} alt="Close" /> */}
-
         <ul>
           <li>
             <a className="btn" href="#" onClick={closeSidebar}>
@@ -42,10 +39,6 @@ function Sidebar({ isOpen, closeSidebar }) {
             </a>
           </li>
         </ul>
-
-        {/* <button className="sidebar__close-icon" onClick={closeSidebar}>
-          <img src="/assets/icon-close.SVG" alt="Close" />
-        </button> */}
       </nav>
     </>
   );
