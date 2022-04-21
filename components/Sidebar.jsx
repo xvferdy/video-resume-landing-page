@@ -3,7 +3,6 @@ import Image from "next/image";
 
 function Sidebar({ isOpen, closeSidebar }) {
   const style = isOpen ? "sidebar sidebar--open" : "sidebar sidebar--closed";
-  console.log(style);
   return (
     <>
       {isOpen && <div className="backdrop" onClick={closeSidebar} />}

@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .header {
-  // border: 1px solid #000;
   @extend %section;
   margin-top: 12.4rem;
   &__container {
@@ -29,7 +28,12 @@
     display: grid;
     place-items: center;
   }
-
+  &__brands {
+    @extend %container;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
   // MEDIA-QUERIES
   @include display(tab-port) {
     &__container {
@@ -38,10 +42,15 @@
     }
   }
   @include display(phone) {
+    margin-top: 7.4rem;
     &__content {
       &-cta {
         gap: 1.6rem;
       }
     }
+  }
+  &__brands {
+    padding-top: 2.4rem;
+    margin-bottom: -2.4rem;
   }
 }

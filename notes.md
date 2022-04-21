@@ -2,20 +2,20 @@
 
 ## Todos
 **Easy**
-- web title
-- favicon
-- check firefox inspector overflow on element tag
-- sidebar improve style
-- useToggle custom hooks
-- backdrop mixin or placeholder
-- brand
-- search ’ ganti '
-- list style atribut ganti type img
+- [x] web title
+- [x] favicon
+- [x] check firefox inspector overflow on element tag
+- [ ] sidebar improve style
+- [x] useToggle custom hooks
+- [x] backdrop mixin or placeholder
+- [ ] brand
+- [x] search ’ ganti '
+- [ ] list style atribut ganti type img
 **Hard**
-- re-assamble video
-- a to link
-- img to Image
-- floating animation loop for review box
+- [ ] re-assamble video
+- [ ] a to link
+- [ ] img to Image
+- [ ] floating animation loop for review box
 **Optional**
 
 ## Timeline

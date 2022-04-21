@@ -49,6 +49,7 @@ function GetStarted() {
                 <p className="star-num">5.0</p>
                 {[...Array(5)].map((e, i) => (
                   <Image
+                    key={i}
                     src="/assets/star.png"
                     width={16}
                     height={16}
@@ -63,7 +64,7 @@ function GetStarted() {
         {/* CONTENT */}
         <div className="get-started__content">
           {[...Array(4)].map((e, i) => (
-            <article className="get-started__content-card">
+            <article key={i} className="get-started__content-card">
               <div className="card-image">
                 <Image
                   src="/assets/stack.png"

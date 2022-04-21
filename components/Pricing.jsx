@@ -51,6 +51,7 @@ function Pricing() {
         <div className="pricing__classes-container">
           {plans.map((plan, i) => (
             <article
+              key={i}
               className={
                 !plan.promo
                   ? "pricing__plan"
@@ -74,8 +75,8 @@ function Pricing() {
 
               {/* LIST */}
               <ul>
-                {plan.benefits.map((benefit) => (
-                  <li className="pricing__plan-list">
+                {plan.benefits.map((benefit, i) => (
+                  <li key={i} className="pricing__plan-list">
                     <Image
                       className="list-icon"
                       src="/assets/check-circle2.png"

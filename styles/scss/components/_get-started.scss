@@ -6,7 +6,7 @@
     // border: 1px solid rgb(170, 0, 0);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 11.7rem;
+    gap: 18.7rem;
   }
 
   &__user {
@@ -79,7 +79,7 @@
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5.6rem;
+    gap: 2.4rem;
     &-card {
       @extend %shadow;
 
@@ -121,7 +121,7 @@
   }
 
   // MEDIA-QUERIES
-  @include display(tab-port) {
+  @include display(tab-land) {
     margin-bottom: 0;
     &__container {
       grid-template-columns: 1fr;
@@ -136,6 +136,9 @@
           transform: translate(-140%, -20%);
         }
       }
+    }
+    &__content {
+      gap: 3rem;
     }
   }
   @include display(phone) {

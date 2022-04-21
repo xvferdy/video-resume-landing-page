@@ -46,6 +46,9 @@ function Header() {
           />
         </div>
       </div>
+      <div className="header__brands">
+        <Image src="/assets/brands.png" width={915} height={129} alt="Brands" />
+      </div>
     </header>
   );
 }

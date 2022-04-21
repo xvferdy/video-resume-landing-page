@@ -51,7 +51,7 @@ function Testimonials() {
       >
         {testimonials.map((testimonial, i) => (
           <SwiperSlide key={i}>
-            <article className="testimonial">
+            <article key={i} className="testimonial">
               <div className="testimonial__image">
                 <Image
                   className="img"
