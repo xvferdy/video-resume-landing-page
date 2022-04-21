@@ -20,7 +20,9 @@ Landing Page Webside Design for Video Resume Creator Web Application.
 - ❤️
 
 ## ⏳ My process
-> ⌛ I challenge my self to finish this for ***~3 days*** <br>
+<details>
+    <summary>⌛ I challenge my self to finish this for <b>~3 days</b></summary> <br>
+  
 > ▐ <br>
 > 🧑‍💻 ***Day 1.*** Studying the design  <br>
 > ▐ <sub>Sass boilerplate <kbd>~1 hour</kbd></sub> <br>
@@ -47,6 +49,8 @@ Landing Page Webside Design for Video Resume Creator Web Application.
 > ▐ <sub>Try to deploy</sub> <br>
 > ▐ <br>
 > 🗓️ 
+  
+</details>
 
 ## 📦 Installation
 ```
