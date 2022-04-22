@@ -1,6 +1,6 @@
 # Video Resume Landing Page
 
-> Original source from 🏀 [Figma](https://www.figma.com/community/file/1046397565619660848) by **Subash Matheswaran**
+> Original source from 🏀 [Dribbble](https://dribbble.com/shots/15853492-Video-Resume-Landing-Page) by **Subash Matheswaran**
 
 ## 📍 Table of Contents
 - [About the Project](#-about-the-project)
@@ -17,7 +17,7 @@ Landing Page Webside Design for Video Resume Creator Web Application.
   <img src="./public/assets/preview.png">
 </p>
 
-🌍 **Demo:**
+🌍 **Demo:** https://video-resume-landing-page.vercel.app/
 
 ## 👀 Built with
 - [Next JS](https://nextjs.org/ "Next JS")
@@ -25,9 +25,8 @@ Landing Page Webside Design for Video Resume Creator Web Application.
 - ❤️
 
 ## ⏳ My process
-<details>
-    <summary>⌛ I challenge my self to finish this for <b>~3 days</b></summary> <br>
-  
+
+> ⌛ I challenge my self to finish this for <b>~3 days</b></summary> <br>
 > ▐ <br>
 > 🧑‍💻 ***Day 1.*** Studying the design  <br>
 > ▐ <sub>Sass boilerplate <kbd>~1 hour</kbd></sub> <br>
@@ -52,10 +51,9 @@ Landing Page Webside Design for Video Resume Creator Web Application.
 > ▐ <br>
 > 🗓️ ***Day 6 and forward.*** Continuing unfinished task <br>
 > ▐ <sub>Try to deploy</sub> <br>
-> ▐ <br>
+> ▐ <br/>
 > 🗓️ 
-  
-</details>
+
 
 ## 📦 Installation
 ```
