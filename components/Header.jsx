@@ -34,7 +34,7 @@ function Header() {
         {/* RIGHT */}
         <div className="header__video">
           <Image
-            src="/assets/header-goup.png"
+            src="/assets/group-7.png"
             width={749}
             height={553}
             alt="Video Player"
