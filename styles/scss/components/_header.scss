@@ -14,7 +14,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-
     &-cta {
       display: flex;
       gap: 2.6rem;
@@ -23,6 +22,94 @@
   &__video {
     display: grid;
     place-items: center;
+    position: relative;
+    justify-items: center;
+    width: fit-content;
+
+    .img-float {
+      position: absolute;
+      transform: scale(0.7);
+
+      &:nth-child(6) {
+        // top: 8.685rem;
+        // left: 8.089rem;
+        top: 10%;
+        left: 6%;
+        animation: float1 6s ease-in-out infinite;
+      }
+      &:nth-child(5) {
+        // top: 16.673rem;
+        // left: 5.35rem;
+        top: 26%;
+        left: 6%;
+        animation: float2 6s ease-in-out infinite;
+      }
+      &:nth-child(4) {
+        // top: 11.3rem;
+        // right: 2.703rem;
+        top: 20%;
+        right: 1%;
+        animation: float4 6s ease-in-out infinite;
+      }
+      &:nth-child(2) {
+        // left: 5.783rem;
+        // bottom: 11.708rem;
+        left: 10%;
+        bottom: 24%;
+        animation: float3 6s ease-in-out infinite;
+      }
+      &:nth-child(3) {
+        // right: 5.043rem;
+        // bottom: 11.209rem;
+        right: 1%;
+        bottom: 18%;
+        animation: float4 6s ease-in-out infinite;
+      }
+      @keyframes float1 {
+        0% {
+          transform: scale(0.7) translateY(0px);
+        }
+        50% {
+          transform: scale(0.7) translateY(10px);
+        }
+        100% {
+          transform: scale(0.7) translateY(0px);
+        }
+      }
+      @keyframes float2 {
+        0% {
+          transform: scale(0.7) translateY(0px);
+        }
+        50% {
+          transform: scale(0.7) translateY(-10px);
+        }
+        100% {
+          transform: scale(0.7) translateY(0px);
+        }
+      }
+      @keyframes float3 {
+        0% {
+          transform: scale(0.7) translateX(0px);
+        }
+        50% {
+          transform: scale(0.7) translateX(-10px);
+        }
+        100% {
+          transform: scale(0.7) translateX(0px);
+        }
+      }
+      @keyframes float4 {
+        0% {
+          transform: scale(0.7) translateX(0px);
+        }
+        50% {
+          transform: scale(0.7) translateX(10px);
+        }
+        100% {
+          transform: scale(0.7) translateX(0px);
+        }
+      }
+    }
   }
   &__brands {
     @extend %container;
@@ -36,6 +123,13 @@
     &__container {
       grid-template-columns: 1fr;
       gap: 3rem;
+    }
+  }
+  @include display(lg-phone) {
+    &__video {
+      .img-float {
+        display: none;
+      }
     }
   }
   @include display(phone) {

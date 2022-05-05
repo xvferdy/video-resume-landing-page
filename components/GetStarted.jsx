@@ -2,6 +2,28 @@ import React from "react";
 import Image from "next/image";
 
 function GetStarted() {
+  const infos = [
+    {
+      icon: "/assets/user-plus.png",
+      title: "Create an account",
+      desc: "You need to create an account. You can do this by clicking on the Sign up button above.",
+    },
+    {
+      icon: "/assets/stack.png",
+      title: "Choose a theme",
+      desc: "Vertical, short or long. We give you the control to make your video resume. We've more than 150+ themes.",
+    },
+    {
+      icon: "/assets/film.png",
+      title: "Edit on the Web",
+      desc: "Add your video clip(s), texts, decoration and effects. All these can be done on the web.",
+    },
+    {
+      icon: "/assets/flag.png",
+      title: "Ready to Fly",
+      desc: "You're all set to get hired with flying colors now.",
+    },
+  ];
   return (
     <section id="get-started" className="get-started">
       <div className="title">
@@ -63,23 +85,17 @@ function GetStarted() {
 
         {/* CONTENT */}
         <div className="get-started__content">
-          {[...Array(4)].map((e, i) => (
+          {infos.map((info, i) => (
             <article key={i} className="get-started__content-card">
               <div className="card-image">
-                <Image
-                  src="/assets/stack.png"
-                  width={24}
-                  height={24}
-                  alt="Icon"
-                />
+                <Image src={info.icon} width={24} height={24} alt="Icon" />
               </div>
 
-              <div className="card-num">01</div>
-              <h4>Create an account</h4>
-              <small>
-                You need to create an account. You can do this by clicking on
-                the Sign up button above.
-              </small>
+              <div className="card-num">
+                {(i + 1).toString().padStart(2, "0")}
+              </div>
+              <h4>{info.title}</h4>
+              <small>{info.desc}</small>
             </article>
           ))}
         </div>

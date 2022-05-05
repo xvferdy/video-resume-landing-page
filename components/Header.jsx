@@ -39,6 +39,47 @@ function Header() {
             height={553}
             alt="Video Player"
           />
+
+          <div className="img-float">
+            <Image
+              src="/assets/group-1.png"
+              width={231}
+              height={59}
+              alt="Photography"
+            />
+          </div>
+          <div className="img-float">
+            <Image
+              src="/assets/group-2.png"
+              width={301}
+              height={43}
+              alt="Email"
+            />
+          </div>
+          <div className="img-float">
+            <Image
+              src="/assets/group-3.png"
+              width={239}
+              height={60}
+              alt="Person"
+            />
+          </div>
+          <div className="img-float">
+            <Image
+              src="/assets/group-4.png"
+              width={244}
+              height={67}
+              alt="Content"
+            />
+          </div>
+          <div className="img-float">
+            <Image
+              src="/assets/group-5.png"
+              width={251}
+              height={57}
+              alt="Experience"
+            />
+          </div>
         </div>
       </div>
       <div className="header__brands">
